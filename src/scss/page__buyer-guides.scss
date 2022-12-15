@@ -1,0 +1,108 @@
+.page__buyer-guides {
+	padding: 99px 0px 72px;
+	@media (max-width: 1024px) {
+		padding: 70px 0px;
+	}
+
+	@media (max-width: 768px) {
+		padding: 40px 0px;
+	}
+}
+
+.buyer-guides {}
+
+.buyer-guides__container {
+	display: flex;
+	flex-direction: column;
+	@media (max-width: 768px) {
+		align-items: center;
+	}
+}
+
+.buyer-guides__subtitle {}
+
+.buyer-guides__title {}
+
+.buyer-guides__paragraph {
+	max-width: 538px;
+	@media (max-width: 768px) {
+		text-align: center;
+	}
+}
+
+.buyer-guides__list {}
+
+.list-buyer-guides {
+	margin-top: 20px;
+	display: flex;
+	column-gap: 32px;
+	@media (max-width: 768px) {
+		flex-direction: column;
+		row-gap: 30px;
+		align-items: center;
+	}
+}
+
+.list-buyer-guides__items {
+	max-width: 568px;
+	display: flex;
+	flex-direction: column;
+}
+
+.list-buyer-guides__image {
+	border-radius: 20px;
+	max-width: 568px;
+
+	& img {
+		width: 100%;
+		height: 100%;
+	}
+
+}
+
+.list-buyer-guides__title {
+	margin-top: 20px;
+	font-size: 20px;
+	line-height: 120%;
+	color: #575445;
+}
+
+.list-buyer-guides__person {}
+
+.person {
+	display: flex;
+	margin-top: 12px;
+	column-gap: 12px;
+
+}
+
+.person__image {}
+
+.person__name {
+	flex: 1 1 auto;
+	margin-top: 8px;
+	font-family: 'Roboto';
+	font-size: 13px;
+	line-height: 140%;
+	color: #575445;
+}
+
+.person__job {
+	display: block;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 140%;
+	color: #E6B939;
+}
+
+.person__date {
+	margin-top: 14px;
+	font-size: 13px;
+	line-height: 140%;
+	color: #6F7278;
+
+}
+
+.buyer-guides__button {
+	margin-top: 26px;
+}

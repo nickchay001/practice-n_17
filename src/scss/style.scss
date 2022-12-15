@@ -1,0 +1,159 @@
+
+/*-----RESETS STYLES-------*/
+
+@import "nullstyle.scss";
+
+
+
+/*--------------FONTS----------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+
+/*------------BODY-----------------*/
+
+body {
+	font-family: Poppins;
+	font-weight: 400;
+}
+
+/*------BODY.LOCK FOR BURGER-------*/
+
+body._lock {
+	overflow: hidden;
+}
+
+/*-----------WRAPPER--------------*/
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+/*--------------CONTAINER----------*/
+
+[class*="__container"] {
+	max-width: 1208px;
+	margin: 0px auto;
+	padding: 0px 20px;
+	position: relative;
+	box-sizing: border-box;
+
+	@media (max-width: 1024px) {
+		padding: 0px 15px;
+	}
+
+	@media (max-width: 768px) {
+		padding: 0px 10px;
+	}
+}
+
+/*------------CONTAINER-BIG--------*/
+
+[class*="__container-big"] {
+	max-width: 1440px;
+	margin: 0px auto;
+	padding: 0px;
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+
+
+
+/*----------TITLE-----------*/
+
+.title {
+	font-family: 'Roboto';
+	font-size: 36px;
+	line-height: 120%;
+	color: #575445;
+
+	@media (max-width: 768px) {
+		font-size: 30px;
+	}
+
+	@media (max-width: 425px) {
+		font-size: 25px;
+	}
+}
+
+/*----------SUB-TITLE-----------*/
+
+.subtitle {
+	font-size: 14px;
+	line-height: 140%;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #E6B939;
+}
+
+/*----------PARAGRAPH-----------*/
+
+.paragraph {
+	margin-top: 7px;
+	font-size: 16px;
+	line-height: 120%;
+	color: #575445;
+}
+
+/*----------BUTTON-----------*/
+
+.button {
+	font-size: 15px;
+	line-height: 140%;
+	color: #575445;
+	display: flex;
+	column-gap: 4px;
+	align-items: center;
+	justify-content: center;
+	transition-duration: 400ms;
+
+	& img {
+		padding: 6.5px 0px 4.5px;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+
+
+/*-----------IMPORTS----------------*/
+
+/*-----------HEADER----------------*/
+
+@import "header.scss";
+
+
+/*-----------MAIN-------------*/
+
+main {
+	flex: 1 1 auto
+}
+
+@import "page__banner.scss";
+@import "page__about-us.scss";
+@import "page__our-promise.scss";
+@import "page__gallery.scss";
+@import "page__services.scss";
+@import "page__shop.scss";
+@import "page__buyer-guides.scss";
+@import "page__our-magazine.scss";
+
+
+/*-----------FOOTER-----------*/
+
+@import "footer.scss";
+
+
+
+
+
+
+
+
